@@ -3,13 +3,13 @@ header
 		.container
 			.header-item.header-item-about
 				.header-item.header-shipping
-					img.heder-top-icon(src="img/delivery.png")
+					img.heder-top-icon(src="static/img/delivery.png")
 					span.heder-top-desc Free shipping
 				.header-item.header-original
-					img.heder-top-icon(src="img/label.png")
+					img.heder-top-icon(src="static/img/label.png")
 					span.heder-desc 100 % ORIGINAL PRODUCTS
 			.header-item.header-phone
-				img.heder-top-icon(src="img/phone.png" alt="phone")
+				img.heder-top-icon(src="static/img/phone.png", alt="phone")
 				span.heder-top-desc call us: 020 7848 3510
 	.header_middle-line
 		.container
@@ -20,17 +20,19 @@ header
 				h1.header-title DREAMY
 				span.header-desc ONLINE STORE
 			.header-item.hedear-item-cart
-				img.cart-icon(src="img/cart.png", alt="cart")
+				img.cart-icon(src="static/img/cart.png", alt="cart")
 				span.cart-text My Cart ( 0 ) : $0
-				button.main-btn.btn--blue CHECKOUT
-				input(type="search" placeholder="Search")
-				button.btn-search
+				button.main_btn.btn--blue CHECKOUT
+				form.search-form
+					input.search-input(type="search" placeholder="Search")
+					button.btn-search
 	.header-slider
 		.header-slider-item
 			.container
 				p.header-slider-text Woman #[span.small-text Style Collection]  #[span.middle-text SS 2016]
-				button.main-btn.btn--blue-border TAKE A LOOK
-				button.main-btn.btn--blue-border SHOP NOW
+				.btn-group
+					button.main_btn.btn--blue-border TAKE A LOOK
+					button.main_btn.btn--blue-border SHOP NOW
 	include menu
 
 
